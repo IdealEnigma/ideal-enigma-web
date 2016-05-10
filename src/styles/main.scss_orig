@@ -1,0 +1,124 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.page {
+  position: relative;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.pane,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page pane */
+.pane {
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.logoimage {
+  width: 50%;
+}
+
+.paneinner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.pane {
+  text-align: center;
+  height: 100vh;
+  display: table;
+  position: absolute;
+
+  .description {
+    color: #666666;
+  }
+
+  .nextdiv {
+    margin-top: 30px;
+    $btnfont: #ffffff;
+
+    a {
+      background-color: #c25e5b;
+      padding: 10px 20px 10px 20px;
+      color: $btnfont;
+      font-size: 1.5em;
+      @include border-radius(30px);
+    }
+
+    a:link {
+      color: $btnfont;
+      font-size: 1.5em;
+    }
+
+    a:hover {
+      color: $btnfont;
+      font-size: 1.5em;
+    }
+
+    a:visited {
+      color: $btnfont;
+      font-size: 1.5em;
+    }
+
+    a:active {
+      color: $btnfont;
+      font-size: 1.5em;
+    }
+  }
+}
+
+.downarrow {
+  margin-left: 5px;
+  width: 15px
+}
+
+.page2 {
+  .pane2 {
+    background-color: #000;
+  }
+}
+
