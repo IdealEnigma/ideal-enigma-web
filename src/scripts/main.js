@@ -21,13 +21,13 @@ $('#btnNext3').click(() => {
 });
 
 /*Floating Scroll-to-Top Button*/
-var amountScrolled = 300;
+let amountScrolled = 300;
 
-$(window).scroll(function() {
-	if ( $(window).scrollTop() > amountScrolled ) {
-		$('a.back-to-top').fadeIn('slow');
-	} else {
-		$('a.back-to-top').fadeOut('slow');
-	}
+$(window).scroll(() => {
+  if ($(window).scrollTop() > amountScrolled) {
+    $('a.back-to-top').fadeIn('slow');
+  } else {
+    $('a.back-to-top').fadeOut('slow');
+  }
 });
 
