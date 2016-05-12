@@ -11,8 +11,12 @@ $icon-font-path: '../fonts/';
           border-radius: $radius;
 }
 
+
+
+
 body {
   margin: 0px;
+  font-family: 'Raleway'; 
 }
 
 .browserupgrade {
@@ -110,5 +114,21 @@ body {
   .description {
     color: #ffffff;
   }
+}
+
+/* Floating Back-to-Top Button */
+a.back-to-top {
+  display: none;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  z-index: 999;
+  right: 85%;
+  bottom: 20px;
+  background: #b3b3b3 url("up-arrow.png") no-repeat center 43%;
+  background-size: 40px 40px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
 }
 
