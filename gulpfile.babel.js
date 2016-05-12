@@ -33,7 +33,29 @@ gulp.task('scripts', () => {
     .pipe(reload({stream: true}));
 });
 
-function lint(files, options) {
+function lint(files) {
+  let options = {
+    "rules": {
+      "comma-dangle": [2, "never"],
+      "func-names": [0],
+      "handle-callback-err": [2],
+      "indent": [2,2],
+      "max-len": [2, 120, 2],
+      "object-shorthand": [2, "never"],
+      "no-empty-label": [0],
+      "space-before-keywords": [0],
+      "space-after-keywords": [0],
+      "space-return-throw-case": [0],
+      "strict": [0]
+    },
+    "env": {
+      "es6": true,
+      "node": true,
+      "browser": true,
+      "mocha": true
+    }
+  };
+
   return () => {
     return gulp.src(files)
       .pipe(reload({stream: true, once: true}))
