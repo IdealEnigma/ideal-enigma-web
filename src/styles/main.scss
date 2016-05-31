@@ -17,7 +17,56 @@ $icon-font-path: '../fonts/';
 body {
   margin: 0px;
   font-family: 'Raleway';
+  font-weight: 400;
 }
+
+a {
+  text-decoration: none;
+}
+
+html { 
+  background: url(../images/background.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Main Navigation */ 
+
+.main-nav {
+  width: 100%;
+  background: #666666;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  z-index: 999;
+  opacity: .9;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+
+.nav a {
+  transition: all .5s;
+  font-size: 18px;
+  color: white;
+}
+
+.nav a:hover {
+  color: white; 
+}
+
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -96,7 +145,8 @@ body {
 
 .page2 {
   min-height: 400px;
-  background-color: #666666;
+  background: #66666;
+
 
   .description {
     color: #ffffff;
@@ -106,6 +156,8 @@ body {
 .page3 {
   min-height: 400px;
 }
+
+
 
 .page4 {
   min-height: 400px;
@@ -130,3 +182,5 @@ a.back-to-top {
   @include border-radius(30px);
 }
 
+
+ 
