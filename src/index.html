@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ideal Enigma</title>
+    <title>ideal enigma</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -16,13 +16,23 @@
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/test.css">
     <!-- endbuild -->
-     <link href='https://fonts.googleapis.com/css?family=Raleway:700,300,400' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=Raleway:700,300,400|Shadows+Into+Light' rel='stylesheet' type='text/css'>
 
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
+  <header>
+    <nav class = "main-nav">
+        <ul class = "nav">
+          <li><a href= "#page1"> < ie > </a></li>
+          <li><a href= "#page2">about</a></li>
+          <li><a href= "#page3">contact</a></li>
+        </ul>
+    </nav>
+  </header>
   <body>
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -30,28 +40,22 @@
     <a href="javascript:void(0)" class="back-to-top"></a>
     
     <!-- Main Navigation -->
-    <div class="main-nav">
-        <ul class="nav">
-          <li><a href= "">Ideal Enigma</a></li>
-          <li><a href= "#page2">About</a></li>
-          <li><a href= "#page4">Projects</a></li>
-          <li><a href= "">Request a Quote</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-    </div>
-
     <div class="container">
       <div class="page page1" id="page1">
         <div class="pane2">
-          <div>
-            <img src="images/puzzlelogo.svg" class="logoimage">
-          </div>
-          <div class="description">
-            <h3>Full Stack Web and Mobile Solutions</h3>
+          <div class = "logoAndTitle"> 
+            <div>
+              <!-- <img src="images/puzzlelogo.svg" class="logoimage"> -->
+            </div>
+            <div class="description">
+              <h1 class = "logoTitle inner"> < ie > </h1>
+              <h1 class = "logoName inner"> ideal enigma </h1>
+              <h3 class = "logoDescription inner">FULL STACK WEB AND MOBILE SOLUTIONS</h3>
+            </div>
           </div>
           <div class="nextdiv">
             <a href="javascript:void(0)" id="btnNext1">
-              <span>What We Do</span>
+              <span>What we do</span>
               <span>
                 <img src="images/down-arrow.svg" class="downarrow">
               </span>
@@ -62,14 +66,20 @@
       <div class="page page2" id="page2">
         <div class="pane2">
           <div class="description">
-            <h2>What We Do</h2>
-            <p>Deliver affordable, full-stack web and mobile solutions for buisiness and personal use. </p>
-            <p></p>
-
+                
+              <div class = "what-we-do">
+                <h2 class = "pageTitle">What we do</h2>
+                <div class = "what-we-do-items">
+                    <p>Website design and hosting</p>
+                    <p>Software and app development</p>
+                    <p>Consultation</p>
+                    <p>Data analysis and automation</p>
+                </div>
+              </div>
           </div>
           <div class="nextdiv">
             <a href="javascript:void(0)" id="btnNext2">
-              <span>Our Solutions</span>
+              <span>Contact</span>
               <span>
                 <img src="images/down-arrow.svg" class="downarrow">
               </span>
@@ -80,15 +90,15 @@
       <div class="page page3" id="page3">
         <div class="pane3">
           <div class="description">
-            <div><img src="" class="processImage"></div>
-            <p>Full-Stack JavaScript | HTML/CSS | Python | PHP | Linux | PostgreSQL
-               MySQL | WordPress as CMS | Amazon Web Services | Django/DRF | AngularJS
-               jQuery | NGINX/LUA | Gulp.js | Git | iOS Development
-              Android Development | Jenkins | Sentry.</p>
+            <h2 class = "pageTitle">Contact</h2>
+            <div class = "contact-info">
+            <p>For more information or to schedule a free consultation email:</p>
+            <p class = "emailLink"> <a href= "mainto:admin@idealenigma.com">admin@idealenigma.com</a></p>
+            </div>
           </div>
           <div class="nextdiv">
             <a href="javascript:void(0)" id="btnNext3">
-              <span>Client Results</span>
+              <span>More</span>
               <span>
                 <img src="images/down-arrow.svg" class="downarrow">
               </span>
@@ -98,10 +108,10 @@
       </div>
       <div class="page page4" id="page4">
         <div class="pane4">
-          <div class="description">
-            <h2>Client Results</h2>
-            <p>Pictures and links to client projects</p>
-            <p>Add positive feedback from clients</p>
+          <div class = "description">
+            <div class = "turing-quote">
+              <p>We can only see a short distance ahead, but we can see plenty there that needs to be done. - Alan Turing</p>
+            </div>
           </div>
         </div>
       </div>

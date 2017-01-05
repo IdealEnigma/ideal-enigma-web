@@ -1,0 +1,174 @@
+
+/*body {
+  margin: 0px;
+  font-family: 'Raleway';
+  font-weight: 400;
+}*/
+
+a {
+  text-decoration: none;
+  color: #fffAf0;
+  /*text-decoration: underline;*/
+  font-weight: bold;
+  font-size: 25px;
+}
+
+ul {
+   list-style-type: none; 
+}
+
+/*.nextPage a{
+    margin-left: 5em;
+}*/
+
+.main-nav {
+  width: 100%;
+  background: #333;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  z-index: 999;
+  opacity: .9;
+/*  border: medium solid black;*/
+}
+.main-nav li.name {
+  color: #fff;
+  font-size: 16px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav .name {
+  display: none;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all .5s;
+  font-size: 18px;
+}
+.nav a:hover {
+  /*color: #c25e5b; */
+  background: #c25e5b;
+}
+
+
+/* Main Page Logo */
+.logoName {
+  color: #c25e5b;
+  font-size: 45px;
+  background: #333;
+  margin: 10px;
+  line-height: 60px;
+  margin-top: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 0;
+  padding-bottom: 0px;
+  margin-bottom: 0;
+  font-weight: lighter;
+/*  -webkit-text-stroke: .3px white;*/
+}
+
+.logoDescription {
+  font-size: 20px;
+  color: #fffAf0;
+  background: #333;
+  margin: 10px;
+  padding: 10px;
+  padding-top: 0;
+  margin-top: 0;
+  font-family: 'Shadows Into Light';
+  font-weight: lighter;
+   /* -webkit-text-stroke: .2px #c25e5b;*/
+}
+
+.logoTitle {
+  color: #333;
+  font-size: 120px;
+    -webkit-text-stroke: .1px #fffAf0;
+  background: #fffAf0;
+  margin: 10px;
+  margin-bottom: 0;
+  opacity: .9;
+}
+
+.inner {
+ display: block;
+}
+
+
+/* Title of Each Page (What we do, Contact etc) */
+
+.pageTitle {
+  color: #c25e5b;
+  background: #333;
+  font-family: 'Shadows Into Light';
+  font-size: 45px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
+/* Button to Go to Next Div */
+
+.nextdiv span{
+  color: #fffAf0;
+  font-family: 'Shadows Into Light';
+}
+
+/*Items in what we do/About Div*/
+
+.what-we-do {
+  background: url(../images/background.jpeg) no-repeat center center fixed; 
+  padding: 10px;
+}
+
+.what-we-do-items {
+  font-size: 18px;
+  background: #fffAf0;
+  color: #333;
+  margin-top: 0;
+  padding: 12px;
+}
+
+/* Contact Page Info */
+.contact-info {
+  background: #fffAf0;
+  margin: 10px;
+  padding: 10px;
+  margin-top: 0;
+}
+
+.emailLink a{
+  color: #c25e5b;
+  margin: 10px;
+  padding: 10px;
+  padding-top: 0;
+  margin-top: 0;
+
+}
+
+.turing-quote {
+  background: url(../images/background.jpeg) no-repeat center center fixed; 
+  padding: 30px;
+}
+
+.turing-quote p{
+  background: #fffAf0;
+  color: #333;
+  padding: 20px;
+}
+
+
+
+
+
